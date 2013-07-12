@@ -25,15 +25,9 @@ This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/pl
 
 == Screenshots ==
 
-1. Download products overview
-2. Download configuration
-3. Download configuration details
-4. Download configuration with variable prices
-5. Payment history
-6. Discount codes
-7. Earnings and sales reports
-8. Add to cart / purchase button
-9. Checkout screen
+1. Download product terms
+2. Checkout screen with terms of use per-product
+
 
 == Changelog ==
 
