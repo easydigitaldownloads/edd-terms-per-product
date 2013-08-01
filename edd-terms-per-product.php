@@ -5,7 +5,7 @@
  * Description: Allow terms of use to be specified on a per-product basis
  * Author: Pippin Williamson
  * Author URI: http://pippinsplugins.com
- * Version: 1.0
+ * Version: 1.0.1
  * Text Domain: edd-terms-per-product
  * Domain Path: languages
 */
