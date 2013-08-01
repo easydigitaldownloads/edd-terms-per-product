@@ -85,9 +85,14 @@ class EDD_Terms_Per_Product {
 
 	public function product_terms() {
 		$cart_items = edd_get_cart_contents();
+		$displayed  = array();
 		echo '<script type="text/javascript">jQuery(document).ready(function($){$("body").on("click", ".edd_per_product_terms_links", function(e) {e.preventDefault();var terms = $(this).attr("href");var parent = $(this).parent();$(terms).slideToggle();parent.find("a").toggle();});});</script>';
 		echo '<fieldset id="edd_terms_agreement">';
 		foreach ( $cart_items as $key => $item ) {
+
+			if( in_array( $item['id'], $displayed ) )
+				continue; // ensure only unique items are shown
+
 			$terms = get_post_meta( $item['id'], '_edd_download_terms', true );
 			if( ! empty( $terms ) ) { ?>
 				<div id="edd-<?php echo $item['id']; ?>-terms-wrap">
@@ -102,6 +107,7 @@ class EDD_Terms_Per_Product {
 					<input name="edd_agree_to_terms_<?php echo $item['id']; ?>" class="required" type="checkbox" id="edd_agree_to_terms_<?php echo $item['id']; ?>" value="1"/>
 				</div>
 				<?php
+				$displayed[] = $item['id'];
 			}
 		}
 		echo '</fieldset>';
