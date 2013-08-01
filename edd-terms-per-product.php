@@ -16,7 +16,7 @@ class EDD_Terms_Per_Product {
 
 		add_action( 'init', array( $this, 'load_textdomain' ) );
 		add_action( 'edd_meta_box_fields', array( $this, 'metabox_field' ), 200 );
-		add_action( 'edd_purchase_form_after_cc_form', array( $this, 'product_terms' ) );
+		add_action( 'edd_purchase_form_before_submit', array( $this, 'product_terms' ) );
 		add_action( 'edd_checkout_error_checks', array( $this, 'error_checks' ), 10, 2 );
 
 		add_filter( 'edd_metabox_fields_save', array( $this, 'fields_to_save' ) );
