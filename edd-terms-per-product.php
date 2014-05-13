@@ -5,7 +5,7 @@
  * Description: Allow terms of use to be specified on a per-product basis
  * Author: Pippin Williamson
  * Author URI: http://pippinsplugins.com
- * Version: 1.0.2
+ * Version: 1.0.3
  * Text Domain: edd-terms-per-product
  * Domain Path: languages
 */
@@ -116,7 +116,8 @@ class EDD_Terms_Per_Product {
 	public function error_checks( $valid_data = array(), $post_data = array() ) {
 		$cart_items = edd_get_cart_contents();
 		foreach ( $cart_items as $key => $item ) {
-			if( ! isset( $post_data['edd_agree_to_terms_' . $item['id'] ] ) ) {
+			$terms = get_post_meta( $item['id'], '_edd_download_terms', true );
+			if( ! isset( $post_data['edd_agree_to_terms_' . $item['id'] ] ) && ! empty( $terms ) ) {
 				edd_set_error( 'agree_to_product_terms', __( 'You must agree to the terms of use for all products.', 'edd-terms-per-product' ) );
 			}
 		}

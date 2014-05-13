@@ -7,7 +7,7 @@ Tags: download, downloads, e-store, eshop, easy digital downloads, digital downl
 Requires at least: 3.6
 Tested up to: 4.0
 
-Stable Tag: 1.0.2
+Stable Tag: 1.0.3
 License: GNU Version 2 or Any Later Version
 
 Allow terms of use to be specified on a per-product basis
@@ -30,6 +30,10 @@ This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/pl
 
 
 == Changelog ==
+
+= 1.0.3: May 13, 2014 =
+
+* Fixed a bug that prevented checkouts from being processed
 
 = 1.0.2: May 13, 2014 =
 
