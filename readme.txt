@@ -4,10 +4,10 @@ Plugin URI: http://easydigitaldownloads.com/extension/terms-per-product
 Contributors: mordauk
 Donate link: http://pippinsplugins.com/support-the-site
 Tags: download, downloads, e-store, eshop, easy digital downloads, digital downloads, e-downloads, ecommerce, e commerce, e-commerce, selling, wp-ecommerce, wp ecommerce, mordauk, Pippin Williamson, pippinsplugins
-Requires at least: 3.3
-Tested up to: 3.6
+Requires at least: 3.6
+Tested up to: 4.0
 
-Stable Tag: 1.0.1
+Stable Tag: 1.0.2
 License: GNU Version 2 or Any Later Version
 
 Allow terms of use to be specified on a per-product basis
@@ -30,6 +30,11 @@ This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/pl
 
 
 == Changelog ==
+
+= 1.0.2: May 13, 2014 =
+
+* Fixed a bug that caused the terms to not show properly when multiple gateways were active
+* Moved the Terms of Use meta field to the Download Settings box
 
 = 1.0.1: August 1, 2013 =
 
