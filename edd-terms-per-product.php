@@ -103,8 +103,8 @@ class EDD_Terms_Per_Product {
 						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links"><?php printf( __( 'Show Terms For %s', 'edd' ), get_post_field( 'post_title', $item['id'] ) ); ?></a>
 						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links" style="display:none;"><?php _e( 'Hide Terms', 'edd' ); ?></a>
 					</div>
-					<label for="edd_agree_to_terms_<?php echo $item['id']; ?>">Agree to Terms</label>
 					<input name="edd_agree_to_terms_<?php echo $item['id']; ?>" class="required" type="checkbox" id="edd_agree_to_terms_<?php echo $item['id']; ?>" value="1"/>
+					<label for="edd_agree_to_terms_<?php echo $item['id']; ?>">Agree to Terms</label>
 				</div>
 				<?php
 				$displayed[] = $item['id'];
