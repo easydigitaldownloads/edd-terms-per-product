@@ -5,9 +5,9 @@ Contributors: mordauk
 Donate link: http://pippinsplugins.com/support-the-site
 Tags: download, downloads, e-store, eshop, easy digital downloads, digital downloads, e-downloads, ecommerce, e commerce, e-commerce, selling, wp-ecommerce, wp ecommerce, mordauk, Pippin Williamson, pippinsplugins
 Requires at least: 3.6
-Tested up to: 4.1
+Tested up to: 4.6
 
-Stable Tag: 1.0.3
+Stable Tag: 1.0.4
 License: GNU Version 2 or Any Later Version
 
 Allow terms of use to be specified on a per-product basis
@@ -30,6 +30,10 @@ This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/pl
 
 
 == Changelog ==
+
+= 1.0.4: May 25, 2016 =
+
+* Fix: Incorrect markup structure for label and input field on checkout
 
 = 1.0.3: May 13, 2014 =
 
