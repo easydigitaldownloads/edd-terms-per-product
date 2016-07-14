@@ -5,7 +5,7 @@
  * Description: Allow terms of use to be specified on a per-product basis
  * Author: Easy Digital Downloads 
  * Author URI: https://easydigitaldownloads.com
- * Version: 1.0.4
+ * Version: 1.0.5
  * Text Domain: edd-terms-per-product
  * Domain Path: languages
 */
