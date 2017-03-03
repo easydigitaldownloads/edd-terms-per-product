@@ -55,11 +55,12 @@ class EDD_Terms_Per_Product {
 		$terms = get_post_meta( $post_id, '_edd_download_terms', true );
 		?>
 		<p>
-			<strong><?php _e( 'Download Terms of Use', 'edd-terms-per-product' ); ?></strong>
+			<strong><?php printf( __( '%s Terms of Use:', 'edd-terms-per-product' ), edd_get_label_singular() ); ?></strong>
 		</p>
 		<p>
 			<textarea name="_edd_download_terms" id="edd_download_terms" rows="10" cols="50" class="large-text"><?php echo $terms; ?></textarea>
-			<label for="edd_download_terms"><?php _e( 'Enter the terms of use for this product.', 'edd-terms-per-product' ); ?></label>
+			<label for="edd_download_terms"><?php printf( __( 'Enter the terms of use for this %s:', 'edd-terms-per-product' ), edd_get_label_singular() ); ?></label>
+
 		</p>
 		<?php
 	}
@@ -100,8 +101,8 @@ class EDD_Terms_Per_Product {
 						<?php echo wpautop( $terms ); ?>
 					</div>
 					<div id="edd_show_<?php echo $item['id']; ?>_terms">
-						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links"><?php printf( __( 'Show Terms For %s', 'edd' ), get_post_field( 'post_title', $item['id'] ) ); ?></a>
-						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links" style="display:none;"><?php _e( 'Hide Terms', 'edd' ); ?></a>
+						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links"><?php printf( __( 'Show Terms For %s', 'edd-terms-per-product' ), get_post_field( 'post_title', $item['id'] ) ); ?></a>
+						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links" style="display:none;"><?php _e( 'Hide Terms', 'edd-terms-per-product' ); ?></a>
 					</div>
 					<input name="edd_agree_to_terms_<?php echo $item['id']; ?>" class="required" type="checkbox" id="edd_agree_to_terms_<?php echo $item['id']; ?>" value="1"/>
 					<label for="edd_agree_to_terms_<?php echo $item['id']; ?>"><?php _e( 'Agree to Terms', 'edd-terms-per-product' ); ?></label>
