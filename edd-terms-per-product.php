@@ -3,7 +3,7 @@
  * Plugin Name: Easy Digital Downloads - Terms Per Product
  * Plugin URI: http://easydigitaldownloads.com/extension/terms-per-product
  * Description: Allow terms of use to be specified on a per-product basis
- * Author: Easy Digital Downloads 
+ * Author: Easy Digital Downloads
  * Author URI: https://easydigitaldownloads.com
  * Version: 1.0.5
  * Text Domain: edd-terms-per-product
@@ -104,7 +104,7 @@ class EDD_Terms_Per_Product {
 						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links" style="display:none;"><?php _e( 'Hide Terms', 'edd' ); ?></a>
 					</div>
 					<input name="edd_agree_to_terms_<?php echo $item['id']; ?>" class="required" type="checkbox" id="edd_agree_to_terms_<?php echo $item['id']; ?>" value="1"/>
-					<label for="edd_agree_to_terms_<?php echo $item['id']; ?>">Agree to Terms</label>
+					<label for="edd_agree_to_terms_<?php echo $item['id']; ?>"><?php _e( 'Agree to Terms', 'edd-terms-per-product' ); ?></label>
 				</div>
 				<?php
 				$displayed[] = $item['id'];
