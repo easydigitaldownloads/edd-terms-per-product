@@ -73,7 +73,8 @@ class EDD_Terms_Per_Product {
 		return wp_kses( $data, array(
 			'a' => array(
 				'href' => array(),
-				'title' => array()
+				'title' => array(),
+				'target' => array()
 			),
 			'br' => array(),
 			'em' => array(),
