@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Easy Digital Downloads - Terms Per Product
- * Plugin URI: http://easydigitaldownloads.com/extension/terms-per-product
+ * Plugin URI: https://easydigitaldownloads.com/downloads/terms-per-product
  * Description: Allow terms of use to be specified on a per-product basis
  * Author: Easy Digital Downloads
  * Author URI: https://easydigitaldownloads.com
- * Version: 1.0.5
+ * Version: 1.0.6
  * Text Domain: edd-terms-per-product
  * Domain Path: languages
 */
@@ -89,7 +89,6 @@ class EDD_Terms_Per_Product {
 
 		if ( $has_terms ) {
 			echo '<script type="text/javascript">jQuery(document).ready(function($){$(".edd_per_product_terms_links").unbind("click").bind("click", function(e) { e.preventDefault();e.stopPropagation();var terms = $(this).attr("href");var parent = $(this).parent();$(terms).slideToggle();parent.find("a").toggle();});});</script>';
-
 			echo '<fieldset id="edd_terms_agreement">' . $has_terms . '</fieldset>';
 		}
 	}

@@ -1,13 +1,13 @@
 === Easy Digital Downloads - Terms Per Product ===
-Author URI: http://pippinsplugins.com
-Plugin URI: http://easydigitaldownloads.com/extension/terms-per-product
+Author URI: https://pippinsplugins.com
+Plugin URI: https://easydigitaldownloads.com/downloads/terms-per-product
 Contributors: easydigitaldownloads, mordauk
 Donate link: http://pippinsplugins.com/support-the-site
 Tags: download, downloads, e-store, eshop, easy digital downloads, digital downloads, e-downloads, ecommerce, e commerce, e-commerce, selling, wp-ecommerce, wp ecommerce, mordauk, Pippin Williamson, pippinsplugins
 Requires at least: 3.6
-Tested up to: 4.6
+Tested up to: 4.9.1
 
-Stable Tag: 1.0.5
+Stable Tag: 1.0.6
 License: GNU Version 2 or Any Later Version
 
 Allow terms of use to be specified on a per-product basis
@@ -30,6 +30,11 @@ This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/pl
 
 
 == Changelog ==
+
+= 1.0.6: December 3, 2017 =
+
+* Allow 'target' attribute in terms anchor tags
+* Remove empty checkout markup when no product terms are present
 
 = 1.0.5: July 14, 2016 =
 
