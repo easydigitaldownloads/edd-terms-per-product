@@ -94,7 +94,9 @@ class EDD_Terms_Per_Product {
 	 * @return string
 	 */
 	public function sanitize_terms_save( $data ) {
-		return wp_kses( $data, array(
+		return wp_kses(
+			$data,
+			array(
 				'a'      => array(
 					'href'   => array(),
 					'title'  => array(),
