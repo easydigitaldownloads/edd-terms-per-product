@@ -59,7 +59,7 @@ class EDD_Terms_Per_Product {
 		</p>
 		<p>
 			<textarea name="_edd_download_terms" id="edd_download_terms" rows="10" cols="50" class="large-text"><?php echo $terms; ?></textarea>
-			<label for="edd_download_terms"><?php printf( __( 'Enter the terms of use for this %s:', 'edd-terms-per-product' ), edd_get_label_singular() ); ?></label>
+			<label for="edd_download_terms"><?php printf( esc_html__( 'Enter the terms of use for this %s:', 'edd-terms-per-product' ), edd_get_label_singular() ); ?></label>
 
 		</p>
 		<?php
