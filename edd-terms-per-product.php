@@ -105,7 +105,7 @@ class EDD_Terms_Per_Product {
 						<a href="#edd_<?php echo $item['id']; ?>_terms" class="edd_per_product_terms_links" style="display:none;"><?php esc_html_e( 'Hide Terms', 'edd-terms-per-product' ); ?></a>
 					</div>
 					<input name="edd_agree_to_terms_<?php echo $item['id']; ?>" class="required" type="checkbox" id="edd_agree_to_terms_<?php echo $item['id']; ?>" value="1"/>
-					<label for="edd_agree_to_terms_<?php echo $item['id']; ?>"><?php _e( 'Agree to Terms', 'edd-terms-per-product' ); ?></label>
+					<label for="edd_agree_to_terms_<?php echo $item['id']; ?>"><?php esc_html_e( 'Agree to Terms', 'edd-terms-per-product' ); ?></label>
 				</div>
 				<?php
 				$displayed[] = $item['id'];
