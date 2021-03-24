@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Easy Digital Downloads - Terms Per Product
- * Plugin URI: http://easydigitaldownloads.com/extension/terms-per-product
+ * Plugin URI: https://easydigitaldownloads.com/downloads/terms-per-product
  * Description: Allow terms of use to be specified on a per-product basis
- * Author: Easy Digital Downloads
- * Author URI: https://easydigitaldownloads.com
- * Version: 1.0.5
+ * Author: Sandhills Development, LLC
+ * Author URI: https://sandhillsdev.com
+ * Version: 1.0.6
  * Text Domain: edd-terms-per-product
  * Domain Path: languages
 */
@@ -74,7 +74,8 @@ class EDD_Terms_Per_Product {
 		return wp_kses( $data, array(
 			'a' => array(
 				'href' => array(),
-				'title' => array()
+				'title' => array(),
+				'target' => array()
 			),
 			'br' => array(),
 			'em' => array(),
@@ -85,10 +86,21 @@ class EDD_Terms_Per_Product {
 
 
 	public function product_terms() {
+		$has_terms = $this->has_terms();
+
+		if ( $has_terms ) {
+			echo '<script type="text/javascript">jQuery(document).ready(function($){$(".edd_per_product_terms_links").unbind("click").bind("click", function(e) { e.preventDefault();e.stopPropagation();var terms = $(this).attr("href");var parent = $(this).parent();$(terms).slideToggle();parent.find("a").toggle();});});</script>';
+			echo '<fieldset id="edd_terms_agreement">' . $has_terms . '</fieldset>';
+		}
+	}
+
+
+	public function has_terms() {
 		$cart_items = edd_get_cart_contents();
 		$displayed  = array();
-		echo '<script type="text/javascript">jQuery(document).ready(function($){$(".edd_per_product_terms_links").unbind("click").bind("click", function(e) { e.preventDefault();e.stopPropagation();var terms = $(this).attr("href");var parent = $(this).parent();$(terms).slideToggle();parent.find("a").toggle();});});</script>';
-		echo '<fieldset id="edd_terms_agreement">';
+
+		ob_start();
+
 		foreach ( $cart_items as $key => $item ) {
 
 			if( in_array( $item['id'], $displayed ) )
@@ -111,8 +123,11 @@ class EDD_Terms_Per_Product {
 				$displayed[] = $item['id'];
 			}
 		}
-		echo '</fieldset>';
+
+		$terms = ob_get_clean();
+		return $terms;
 	}
+
 
 	public function error_checks( $valid_data = array(), $post_data = array() ) {
 		$cart_items = edd_get_cart_contents();
