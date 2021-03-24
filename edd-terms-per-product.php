@@ -55,7 +55,7 @@ class EDD_Terms_Per_Product {
 		$terms = get_post_meta( $post_id, '_edd_download_terms', true );
 		?>
 		<p>
-			<strong><?php printf( __( '%s Terms of Use:', 'edd-terms-per-product' ), edd_get_label_singular() ); ?></strong>
+			<strong><?php printf( esc_html__( '%s Terms of Use:', 'edd-terms-per-product' ), esc_html( edd_get_label_singular() ) ); ?></strong>
 		</p>
 		<p>
 			<textarea name="_edd_download_terms" id="edd_download_terms" rows="10" cols="50" class="large-text"><?php echo $terms; ?></textarea>
