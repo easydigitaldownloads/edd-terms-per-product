@@ -3,8 +3,8 @@
  * Plugin Name: Easy Digital Downloads - Terms Per Product
  * Plugin URI: https://easydigitaldownloads.com/downloads/terms-per-product
  * Description: Allow terms of use to be specified on a per-product basis
- * Author: Easy Digital Downloads
- * Author URI: https://easydigitaldownloads.com
+ * Author: Sandhills Development, LLC
+ * Author URI: https://sandhillsdev.com
  * Version: 1.0.6
  * Text Domain: edd-terms-per-product
  * Domain Path: languages

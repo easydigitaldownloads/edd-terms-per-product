@@ -1,11 +1,12 @@
 === Easy Digital Downloads - Terms Per Product ===
-Author URI: https://pippinsplugins.com
 Plugin URI: https://easydigitaldownloads.com/downloads/terms-per-product
+Author: Sandhills Development, LLC
+Author URI: https://sandhillsdev.com
 Contributors: easydigitaldownloads, mordauk
-Donate link: http://pippinsplugins.com/support-the-site
+Donate link: https://easydigitaldownloads.com/donate/
 Tags: download, downloads, e-store, eshop, easy digital downloads, digital downloads, e-downloads, ecommerce, e commerce, e-commerce, selling, wp-ecommerce, wp ecommerce, mordauk, Pippin Williamson, pippinsplugins
 Requires at least: 3.6
-Tested up to: 4.9.1
+Tested up to: 5.7
 
 Stable Tag: 1.0.6
 License: GNU Version 2 or Any Later Version
