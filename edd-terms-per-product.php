@@ -5,7 +5,7 @@
  * Description: Allow terms of use to be specified on a per-product basis
  * Author: Sandhills Development, LLC
  * Author URI: https://sandhillsdev.com
- * Version: 1.0.6
+ * Version: 1.0.7
  * Text Domain: edd-terms-per-product
  * Domain Path: languages
  */

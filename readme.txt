@@ -6,9 +6,9 @@ Contributors: easydigitaldownloads, mordauk
 Donate link: https://easydigitaldownloads.com/donate/
 Tags: download, downloads, e-store, eshop, easy digital downloads, digital downloads, e-downloads, ecommerce, e commerce, e-commerce, selling, wp-ecommerce, wp ecommerce, mordauk, Pippin Williamson, pippinsplugins
 Requires at least: 3.6
+Requires PHP: 5.3
 Tested up to: 5.7
-
-Stable Tag: 1.0.6
+Stable Tag: 1.0.7
 License: GNU Version 2 or Any Later Version
 
 Allow terms of use to be specified on a per-product basis
@@ -29,8 +29,18 @@ This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/pl
 1. Download product terms
 2. Checkout screen with terms of use per-product
 
+== Upgrade Notice ==
+
+= 1.0.7 =
+Fix: "Agree to Terms" label wasn't available for translation.
 
 == Changelog ==
+
+= 1.0.7: March 29, 2021 =
+
+* Fix: "Agree to Terms" label wasn't available for translation.
+* Tweak: Updated plugin author name to Sandhills Development, LLC.
+* Dev: Updated code to add PHPDocs and follow WPCS.
 
 = 1.0.6: December 3, 2017 =
 
